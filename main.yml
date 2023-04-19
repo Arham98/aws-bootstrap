@@ -50,7 +50,7 @@ Resources:
     Type: AWS::EC2::Instance
     CreationPolicy: 
       ResourceSignal:
-        Timeout: PT15M
+        Timeout: PT5M
         Count: 1
     Metadata:
       AWS::CloudFormation::Init:
@@ -97,7 +97,7 @@ Resources:
             nvm use v12.7.0
 
             # Download latest code, unzip it into /home/ec2-user/app
-            wget https://github.com/ed-user-e67c362b/aws-bootstrap/archive/master.zip 
+            wget https://github.com/ed-user-a38e6e1e/aws-bootstrap/archive/master.zip 
             unzip master.zip
             mv aws-bootstrap-master app
 
